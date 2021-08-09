@@ -452,22 +452,25 @@
     }
     .right-item_md {
         margin: 5px 30px;
+        display: block;
     }
     .right-item {
-        width: 139px;
+        width: 188px;
         height: 109px;
+        margin: 10px 0px;
     }
     .right-item h1 {
-        font-size: 35px;
-        margin: 15px 30px;
+        font-size: 40px;
+        margin: 8px 55px;
     }
     .right-item h2 {
-        font-size: 13px;
-        margin: 0px 43px;
+        font-size: 15px;
+        margin: 0px 53px;
     }
     .minus {
         width: 16px;
         height: 1px;
+        margin-left: 27px;
     }
     .md-icons {
         display: none;
@@ -484,6 +487,17 @@
     .skills-container {
         /* width: 90%; */
         margin: 0px 17px;
+    }
+    .items-skills {
+        margin: 26px 0px;
+    }
+    .main_right_md {
+        display: flex;
+        justify-content: center;
+    }
+    .plus {
+        position: absolute;
+        font-size: 33px;
     }
 }
 
