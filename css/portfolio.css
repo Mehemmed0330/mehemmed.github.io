@@ -58,7 +58,7 @@
 }
 
 .linkdifferent {
-    width: 230%;
+    width: 170%;
     margin: 20px 0px;
     border-bottom: 1px solid grey;
     margin-left: 20px;
@@ -80,7 +80,7 @@
 }
 
 .link {
-    width: 230%;
+    width: 170%;
     margin: 20px 0px;
     border-bottom: 1px solid grey;
     margin-left: 20px;
@@ -280,12 +280,12 @@
         right: 20px;
         z-index: 100000000;
     }
-    .linkdifferent {
+    /* .linkdifferent {
         width: 140%;
     }
     .link {
         width: 140%;
-    }
+    } */
 }
 
 @media (min-width: 576px) and (max-width:768px) {

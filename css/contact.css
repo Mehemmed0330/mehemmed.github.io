@@ -48,6 +48,10 @@
     transition: all 0.4s ease;
 }
 
+.navbar {
+    margin-top: 72px;
+}
+
 .linkdifferent {
     width: 88%;
     margin: 20px 0px;
