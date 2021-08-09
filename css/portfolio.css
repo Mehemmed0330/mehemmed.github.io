@@ -1,0 +1,484 @@
+#md-big_page {
+    width: 100%;
+}
+
+.md-main_container {
+    margin: 38px 45px;
+}
+
+.color-block {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate( -15deg);
+    left: -83%;
+    top: -50%;
+    background-color: rgb(103, 164, 34);
+}
+
+.md-image {
+    width: 455px;
+    height: 580px;
+    border-radius: 30px;
+    box-shadow: 4px -5px 20px 3px grey;
+    position: relative;
+}
+
+.md-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 10px gray;
+    position: relative;
+}
+
+.md-about_text_icons {
+    /* height: 40%; */
+    display: block;
+    display: flex;
+    margin: 35px -30px;
+    width: 600;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: -1600px;
+    transition: all 0.1s ease;
+}
+
+.navbar {
+    position: absolute;
+    top: 10%;
+}
+
+.linkdifferent {
+    width: 230%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+    color: green;
+}
+
+.linkdifferent i {
+    color: green;
+}
+
+.linkdifferent a {
+    color: green;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 28px;
+}
+
+.link {
+    width: 230%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+}
+
+.link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.bar {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#close {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.tire {
+    border-radius: 5px;
+    height: 5px;
+    width: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.md-name h1 {
+    color: rgb(114, 182, 38);
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0px;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+
+.front {
+    color: rgb(102, 102, 102);
+    font-weight: 900;
+}
+
+.md-abouts p {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    margin: 30px 0px;
+    line-height: 40px;
+    padding-right: 70px;
+}
+
+.md-abouts {
+    display: block;
+    margin-left: auto;
+    margin-top: 45px;
+    width: 100%;
+}
+
+.btn-about {
+    padding: 7px 60px;
+    border-radius: 40px;
+    border: 1px solid rgb(42, 160, 42);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(122, 121, 102);
+    background-color: white;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 220px;
+}
+
+.a_arrow {
+    position: relative;
+    margin-top: 0px;
+    text-decoration: none;
+    margin-right: 0px;
+    width: 43px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 182, 38);
+    ;
+}
+
+.a_arrow i {
+    color: white;
+    font-size: 20px;
+}
+
+.md-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    height: 330px;
+    width: 50px;
+    margin: 60px 0px;
+}
+
+.md-icons a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(114, 182, 38);
+    border-radius: 50%;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+}
+
+.md-icons a:hover {
+    width: 100px;
+    visibility: visible;
+    height: 50px;
+}
+
+.md-icons i {
+    color: white;
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+@media screen and (max-width: 576px) {
+    .md-image {
+        display: none;
+    }
+    .md-image img {
+        display: none;
+    }
+    .color-block {
+        display: none;
+    }
+    .md-icons {
+        display: none;
+    }
+    .md-abouts {
+        text-align: left;
+        margin-top: 15px !important;
+    }
+    .tire {
+        display: none;
+    }
+    .md-name h1 {
+        font-size: 22px;
+        line-height: 35px;
+        margin: 20px 0px;
+    }
+    .md-abouts p {
+        padding-right: 9px;
+        /* margin: 19px 18px; */
+        line-height: 34px;
+        font-size: 16px;
+    }
+    .btn-icon {
+        display: flex !important;
+        justify-content: center !important;
+        width: auto;
+    }
+    .btn-about {
+        position: relative;
+        padding: 11px 60px;
+    }
+    .a_arrow {
+        right: 50px;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .bar {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 20px;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 100000000;
+    }
+    .linkdifferent {
+        width: 140%;
+    }
+    .link {
+        width: 140%;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .md-main_container {
+        margin: 148px 45px !important;
+    }
+    .color-block {
+        display: none;
+    }
+    .md-icons {
+        display: none;
+    }
+    .tire {
+        display: none;
+    }
+    .md-image {
+        border-radius: 50%;
+        width: 230px !important;
+        height: 230px !important;
+        margin: 0px 128px;
+    }
+    .md-about_text_icons {
+        margin: 0px;
+    }
+    .md-abouts {
+        margin-top: 7px;
+    }
+    .md-abouts p {
+        text-align: center;
+        padding: 0px;
+    }
+    .md-name h1 {
+        font-size: 38px !important;
+        line-height: 45px;
+        text-align: center;
+    }
+    .btn-icon {
+        display: flex !important;
+        justify-content: center !important;
+        width: auto;
+    }
+    .btn-about {
+        position: relative;
+        padding: 11px 60px;
+    }
+    .a_arrow {
+        width: 50px;
+        height: 50px;
+        right: 50px;
+    }
+    .bar {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 100000000;
+    }
+    .linkdifferent {
+        font-size: 25px;
+        width: 145%;
+    }
+    .linkdifferent a {
+        font-size: 26px;
+    }
+    .link {
+        width: 145%;
+    }
+    .link i {
+        font-size: 26px;
+    }
+    .link a {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .md-main_container {
+        margin: 148px 45px !important;
+    }
+    .color-block {
+        display: none;
+    }
+    .md-icons {
+        display: none;
+    }
+    .tire {
+        display: none;
+    }
+    .md-image {
+        border-radius: 50%;
+        width: 300px !important;
+        height: 300px !important;
+        margin: 0px 189px;
+    }
+    .md-about_text_icons {
+        margin: 0px;
+    }
+    .md-abouts p {
+        text-align: center;
+        padding: 0px;
+    }
+    .md-name h1 {
+        font-size: 38px !important;
+        line-height: 45px;
+        text-align: center;
+    }
+    .btn-icon {
+        display: flex !important;
+        justify-content: center !important;
+        width: auto;
+    }
+    .btn-about {
+        position: relative;
+        padding: 11px 60px;
+    }
+    .a_arrow {
+        width: 50px;
+        height: 50px;
+        right: 50px;
+    }
+    .bar {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 100000000;
+    }
+    .linkdifferent {
+        font-size: 25px;
+        width: 295%;
+    }
+    .linkdifferent a {
+        font-size: 26px;
+    }
+    .link {
+        width: 295%;
+    }
+    .link i {
+        font-size: 26px;
+    }
+    .link a {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .md-image {
+        width: 370px;
+        height: 89vh;
+        margin-top: 66px;
+    }
+    .md-about_text_icons {
+        position: relative;
+        top: 27%;
+    }
+    .md-name h1 {
+        font-size: 40px;
+        top: 50%;
+        margin-left: 20px;
+    }
+    .md-icons {
+        height: 408px;
+    }
+    .md-abouts p {
+        margin-left: 30px;
+        padding: 0px;
+    }
+    .btn-about {
+        left: 75%;
+        position: relative;
+    }
+    .a_arrow {
+        left: 59%;
+        position: absolute;
+    }
+}

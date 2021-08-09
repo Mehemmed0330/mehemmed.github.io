@@ -1,0 +1,553 @@
+#md-about {
+    width: 100%;
+}
+
+.md_container-about {
+    width: 100%;
+}
+
+.mobile-header {
+    height: 10vh;
+    /* width: 100%; */
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+}
+
+.mobile-header h1 {
+    font-size: 22px;
+    margin-left: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(102, 102, 102);
+}
+
+.mobile-header span {
+    color: rgb(114, 182, 38);
+}
+
+.bar {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: -1600px;
+    transition: all 0.1s ease;
+}
+
+#close {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.navbar {
+    position: absolute;
+    top: 10%;
+}
+
+.linkdifferent {
+    width: 170%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+    color: green;
+}
+
+.linkdifferent i {
+    color: green;
+}
+
+.linkdifferent a {
+    color: green;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 28px;
+}
+
+.link {
+    width: 170%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+}
+
+.link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.md-header {
+    margin: 40px auto;
+    position: relative;
+    height: 130px;
+    width: 600px;
+}
+
+.md-image-mobile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 4px -5px 20px 3px grey;
+    position: relative;
+    top: 2%;
+    display: none;
+}
+
+.md-image-mobile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 10px gray;
+    position: relative;
+}
+
+.res {
+    font-size: 113px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    color: rgba(30, 37, 48, 0.07);
+    top: 12px;
+    right: 43px;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+.me {
+    color: rgb(114, 182, 38);
+}
+
+.md-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    position: absolute;
+    top: 49px;
+    left: 65px;
+    font-weight: 900;
+    color: rgb(102, 102, 102);
+}
+
+.main_left_md {
+    width: 85%;
+    margin: 0px auto;
+    line-height: 3em;
+}
+
+.personal_info h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+.personal-md {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    width: 700px;
+}
+
+.about {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.personal_abouts-left_md h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+}
+
+.personal_abouts-right_md h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+}
+
+.main_right_md {
+    display: flex;
+}
+
+.right-item_md {
+    width: 200px;
+    margin: 0px 67px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.right-item {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    width: 250px;
+    height: 150px;
+}
+
+.right-item h1 {
+    font-size: 55px;
+    color: rgb(114, 182, 38);
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 30px;
+}
+
+.plus {
+    position: absolute;
+    font-size: 30px;
+}
+
+.minus {
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background-color: black;
+    margin: 10px 20px;
+    background-color: rgb(102, 102, 102);
+}
+
+.right-item h2 {
+    font-size: 20px;
+    margin: 0px 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+}
+
+.md-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    height: 350px;
+    width: 50px;
+    margin: -60px 0px;
+    position: fixed;
+    right: 10px;
+}
+
+.md-icons a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(114, 182, 38);
+    border-radius: 50%;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+}
+
+.md-icons i {
+    color: white;
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+.line {
+    margin: 100px auto;
+    width: 40%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+}
+
+.skills-container {
+    width: 89%;
+    margin: 0px auto;
+}
+
+.skills-header {
+    width: 100%;
+}
+
+.skills-header h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgb(102, 102, 102);
+    padding: 25px;
+}
+
+.items-skills {
+    border: 1px solid rgb(102, 102, 102);
+    padding: 10px;
+    margin: 26px;
+    /* width: 350px; */
+    border-radius: 15px;
+    box-shadow: 1px -1px 20px 3px rgb(114, 182, 38)
+}
+
+.items-skills img {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+}
+
+.items-skills h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(114, 182, 38);
+}
+
+.items-skills p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(102, 102, 102)
+}
+
+.education_md-container {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.experience-header {
+    width: 100%;
+}
+
+.experience-header h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgb(102, 102, 102);
+    padding: 25px;
+}
+
+.items-education {
+    border-left: 1px solid gray;
+    margin: 20px 0px;
+    padding: 0px 40px;
+    position: relative;
+}
+
+.items-education h4 {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(241, 241, 241);
+    width: 110px;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 15px;
+}
+
+.items-education h2 {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin: 12px 0;
+}
+
+.envato {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(140, 140, 140);
+}
+
+.items-education p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.icon {
+    position: absolute;
+    background-color: rgb(114, 182, 38);
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 30px;
+    left: -22px;
+}
+
+.icon i {
+    color: white;
+}
+
+.icon-cap {
+    position: absolute;
+    background-color: rgb(114, 182, 38);
+    padding: 15px;
+    border-radius: 50%;
+    left: -22px;
+}
+
+.icon-cap i {
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .md-header {
+        display: none;
+    }
+    .mobile-header {
+        width: 100%;
+        display: inline-flex;
+    }
+    .bar {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000000;
+        margin-left: 54px;
+        position: fixed;
+        right: 16px;
+    }
+    .personal_info {
+        position: relative;
+        right: 15px;
+    }
+    .personal_info h1 {
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    .md-image-mobile {
+        display: block;
+        margin-top: 14px;
+        margin-left: 14px;
+    }
+    .personal-md {
+        margin: 10px 18px;
+        display: grid;
+        grid-template-columns: repeat(1, 0.2fr);
+        width: 100%;
+        text-align: center;
+    }
+    .personal_abouts-right_md h1 {
+        font-size: 12px;
+    }
+    .personal_abouts-right_md h1 {
+        font-size: 12px;
+    }
+    .right-item_md {
+        margin: 5px 30px;
+    }
+    .right-item {
+        width: 139px;
+        height: 109px;
+    }
+    .right-item h1 {
+        font-size: 35px;
+        margin: 15px 30px;
+    }
+    .right-item h2 {
+        font-size: 13px;
+        margin: 0px 43px;
+    }
+    .minus {
+        width: 16px;
+        height: 1px;
+    }
+    .md-icons {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        position: fixed;
+    }
+    .main_left_md {
+        display: grid;
+        justify-content: center;
+        padding-top: 75px;
+    }
+    .skills-container {
+        /* width: 90%; */
+        margin: 0px 17px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .md-header {
+        display: flex;
+        justify-content: center;
+    }
+    .res {
+        width: 84%;
+    }
+    .md-header h1 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.1em;
+    }
+    .items-skills h1 {
+        font-size: 20px;
+    }
+    .right-item {
+        width: 292px;
+    }
+    .skills-container {
+        width: 100%;
+        margin: 0px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .about {
+        font-size: 20px;
+    }
+    .personal_abouts-left_md h1 {
+        font-size: 15px;
+    }
+    .personal_abouts-right_md h1 {
+        font-size: 15px;
+    }
+    .main_left_md {
+        width: 87%;
+    }
+    .right-item_md {
+        width: unset;
+        margin-top: 26px;
+    }
+    .right-item {
+        width: 327px;
+        height: 174px;
+    }
+    .right-item h2 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .main_right_md {
+        display: flex;
+        justify-content: center;
+    }
+    .res {
+        width: 89%;
+    }
+    .md-header h1 {
+        width: 78%;
+        display: flex;
+        justify-content: center;
+    }
+}

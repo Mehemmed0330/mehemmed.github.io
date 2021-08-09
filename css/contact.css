@@ -1,0 +1,448 @@
+#contact_md {
+    width: 100%;
+}
+
+.mobile-header {
+    height: 10vh;
+    /* width: 100%; */
+    background-color: rgb(238, 238, 238);
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+.bar {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: -1600px;
+    transition: all 0.1s ease;
+    display: none;
+}
+
+.mobile-header h1 {
+    font-size: 22px;
+    margin-left: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(102, 102, 102);
+}
+
+.mobile-header span {
+    color: rgb(114, 182, 38);
+}
+
+#close {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.linkdifferent {
+    width: 88%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+    color: green;
+}
+
+.linkdifferent i {
+    color: green;
+}
+
+.linkdifferent a {
+    color: green;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 28px;
+}
+
+.link {
+    width: 88%;
+    margin: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    padding: 13px;
+}
+
+.link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.contact_container-md {
+    margin: 40px auto;
+    position: relative;
+    height: 130px;
+    width: 600px;
+}
+
+.heade_md_contact {
+    width: 100%;
+    margin-left: 0px auto;
+}
+
+.con {
+    font-size: 113px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    color: rgba(30, 37, 48, 0.07);
+    top: 12px;
+    left: 45px;
+    font-weight: 900;
+    letter-spacing: 23px;
+}
+
+.th_md {
+    color: rgb(114, 182, 38);
+}
+
+.contact_container-md h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 51px;
+    position: absolute;
+    top: 46px;
+    left: 93px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    letter-spacing: 5px;
+}
+
+.items_contact_md {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.items_contact_md h1 {
+    font-size: 25px;
+    color: rgb(102, 102, 102);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.items_contact_md p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    margin: 10px 0px;
+    line-height: 1.5em;
+}
+
+.mail {
+    margin: 5px 0px;
+    padding: 10px 0;
+}
+
+.icon_link {
+    display: flex;
+}
+
+.icon_link i {
+    color: rgb(114, 182, 38);
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.mail-name {
+    margin: 0px 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+}
+
+.mail-name h2 {
+    font-size: 19px;
+    color: rgb(153, 153, 153);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.mail-name h3 {
+    font-size: 13px;
+}
+
+.icon_links {
+    display: flex;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.icon_links i {
+    background-color: rgb(238, 238, 238);
+    text-decoration: none;
+    padding: 12px;
+    color: rgb(102, 102, 102);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type=text],
+select {
+    width: 28%;
+    padding: 12px 30px;
+    margin: 8px 9px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 26px;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    font-weight: 800;
+}
+
+textarea {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px 8px;
+    border-radius: 30px;
+    font-size: 20px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.md-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    height: 350px;
+    width: 50px;
+    margin: -60px 0px;
+    position: fixed;
+    right: 10px;
+}
+
+.md-icons a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(114, 182, 38);
+    border-radius: 50%;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+}
+
+.md-icons i {
+    color: white;
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+.btn-about {
+    padding: 7px 10px;
+    border-radius: 40px;
+    border: 1px solid rgb(42, 160, 42);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(122, 121, 102);
+    background-color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 236px;
+}
+
+
+/* .btn-icon {
+    display: flex;
+    right: 30px;
+} */
+
+.a_arrow {
+    position: relative;
+    margin-top: 0px;
+    left: 200px;
+    text-decoration: none;
+    margin-right: 0px;
+    width: 43px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 182, 38);
+}
+
+.a_arrow i {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-header {
+        display: block;
+    }
+    .md-icons {
+        display: none;
+    }
+    .mobile-header h1 {
+        position: relative;
+        top: 34%;
+    }
+    .bar {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000000;
+        margin-left: 54px;
+        position: fixed;
+        right: 16px;
+        top: 2%;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .contact_container-md {
+        display: none;
+    }
+    /* .items_contact_md {
+        margin: 0px 10px;
+    } */
+    .items_contact_md h1 {
+        font-size: 23px;
+        margin: 10px 0px !important;
+    }
+    .items_contact_md p {
+        font-size: 13px;
+    }
+    .icon_link i {
+        font-size: 30px;
+    }
+    .mail-name h2 {
+        font-size: 16px;
+    }
+    .mail-name h3 {
+        font-size: 10px;
+    }
+    .icon_links {
+        width: 70%;
+    }
+    input[type=text],
+    select {
+        width: 92%;
+    }
+    textarea {
+        width: 92%;
+        margin: 0px 10px;
+    }
+    .btn-about {
+        left: 10%;
+        top: 19px;
+        position: relative;
+    }
+    .a_arrow {
+        position: absolute;
+        margin-top: -24px;
+        left: 235px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    input[type=text],
+    select {
+        width: 90%;
+        margin: 8px 20px;
+    }
+    textarea {
+        margin: 20px;
+        width: 90%;
+    }
+    .icon_links {
+        width: 38%;
+    }
+    .md-icons {
+        display: none;
+    }
+    .bar {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-color: lightgray;
+        font-size: 25px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000000;
+        margin-left: 54px;
+        position: fixed;
+        right: 16px;
+        top: 2%;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .a_arrow {
+        display: none;
+    }
+    .btn-about {
+        position: relative;
+        left: 31%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .md-icons {
+        top: 47%;
+    }
+    textarea {
+        margin: 20px;
+    }
+    input[type=text],
+    select {
+        width: 30%;
+        margin: 8px 10px;
+    }
+    .mail-name h2 {
+        font-size: 22px;
+        margin: 5px 0px;
+    }
+    .mail-name h3 {
+        font-size: 17px;
+    }
+    .icon_link i {
+        font-size: 38px;
+    }
+    .icon_links {
+        width: 36%;
+    }
+    .a_arrow {
+        display: none;
+    }
+    .btn-about {
+        position: relative;
+        left: 10%;
+        padding: 15px 10px;
+    }
+}
