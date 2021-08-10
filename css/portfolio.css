@@ -280,12 +280,12 @@
         right: 20px;
         z-index: 100000000;
     }
-    /* .linkdifferent {
-        width: 140%;
+    .linkdifferent {
+        width: 175%;
     }
     .link {
-        width: 140%;
-    } */
+        width: 175%;
+    }
 }
 
 @media (min-width: 576px) and (max-width:768px) {
