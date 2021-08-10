@@ -425,7 +425,7 @@
     }
     .personal_info {
         position: relative;
-        right: 15px;
+        right: 36px;
     }
     .personal_info h1 {
         font-size: 22px;
@@ -483,10 +483,6 @@
         display: grid;
         justify-content: center;
         padding-top: 75px;
-    }
-    .skills-container {
-        /* width: 90%; */
-        margin: 0px 17px;
     }
     .items-skills {
         margin: 26px 0px;
