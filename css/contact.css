@@ -352,7 +352,8 @@ textarea {
     }
     input[type=text],
     select {
-        width: 92%;
+        width: 91%;
+        margin: 8px 13px;
     }
     textarea {
         width: 92%;
