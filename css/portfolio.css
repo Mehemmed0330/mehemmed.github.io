@@ -482,3 +482,9 @@
         position: absolute;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .mobile-menu {
+        display: none;
+    }
+}
