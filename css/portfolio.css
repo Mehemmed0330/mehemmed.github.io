@@ -224,6 +224,7 @@
     }
     .md-image img {
         display: none;
+        border-radius: 50%;
     }
     .color-block {
         display: none;
@@ -306,6 +307,9 @@
         width: 230px !important;
         height: 230px !important;
         margin: 0px 128px;
+    }
+    .md-image img {
+        border-radius: 50%;
     }
     .md-about_text_icons {
         margin: 0px;
