@@ -280,14 +280,14 @@
     }
     .items_portfolio {
         position: relative;
-        left: 10%;
+        /* left: 10%; */
     }
     .mobile-menu {
         display: block;
     }
 }
 
-@media (min-width: 768px) and (max-width:1200px) {
+@media (min-width: 768px) and (max-width:992px) {
     .bar {
         width: 35px;
         height: 35px;
@@ -314,21 +314,27 @@
         display: block;
     }
     .wrk {
-        left: 35%;
+        left: 11%;
     }
     .portfolio_container-md h1 {
-        top: 46px;
-        left: 38%;
+        top: 56px;
+        left: 15%;
         width: 100%;
     }
     .main_portfolio {
-        width: 92%;
-        margin: 0px 49px;
+        width: 94%;
+        margin: 0px auto;
         padding-top: 0px;
+    }
+    .linkdifferent {
+        width: 92%;
+    }
+    .link {
+        width: 92%;
     }
 }
 
-@media (min-width: 768px) and (max-width:992px) {
+@media (min-width: 992px) and (max-width:1200px) {
     .bar {
         width: 35px;
         height: 35px;
