@@ -46,6 +46,7 @@
     top: 0;
     left: -1600px;
     transition: all 0.1s ease;
+    display: none;
 }
 
 #close {
@@ -200,7 +201,7 @@
 .right-item {
     border: 1px solid rgb(221, 221, 221);
     border-radius: 6px;
-    width: 250px;
+    width: 285px;
     height: 150px;
 }
 
