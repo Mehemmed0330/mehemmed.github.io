@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app/css/responsive.css">
+    <link rel="stylesheet" href="/static/app/css/reset.css">
+    <link rel="stylesheet" href="/static/app/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <title>My Blog</title>
+</head>
+
+<body>
+    <section id="blog_md">
+        <div class="bar">
+            <i class="fas fa-times" id="close"></i>
+            <i class="fas fa-bars" id="open"></i>
+        </div>
+        <div class="mobile-header">
+            <h1>MƏNİM <span class="hqq">BLOQUM</span></h1>
+            <!-- <div class="bar">
+                <i class="fas fa-times" id="close"></i>
+                <i class="fas fa-bars" id="open"></i>
+            </div> -->
+        </div>
+        <div class="blog_container-md">
+            <!-- Start Header -->
+            <section id="header">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="header_md_blog">
+                            <span class="ps_md">POSTLAR</span>
+                            <h1>MƏNİM <span class="bg_md">BLOQUM</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="main">
+            <div class="main_blog">
+                <div class="row">
+                    {% for blog in blogs %}
+                    <div class="col-12 col-md-6 col-xl-4  ">
+                        <div class="items_blog">
+                            <div class="date-year">
+                                <h1>{{blog.blog_date}}</h1>
+                            </div>
+                            <a href="{{blog.blog_link}}">
+                                <img src="static/uploads/{{blog.blog_picture}}" alt=""> </a>
+                            <h1>{{blog.blog_title}}</h1>
+                            <p>{{blog.blog_about}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="md-icons">
+                    <a href="/"><i class="fas fa-home"></i></a>
+                    <a href="/about"><i class="fas fa-user"></i></a>
+                    <a href="/works"><i class="fas fa-briefcase"></i></a>
+                    <a href="/contact"> <i class="far fa-envelope-open"></i></a>
+                    <a href="/blog"> <i class="far fa-comments"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="footer_number_md">
+            <div class="num_md">1</div>
+            <div class="num_md">2</div>
+            <div class="num_md">3</div>
+            <div class="num_md">4</div>
+
+        </div>
+        <div class="mobile-menu">
+            <div class="navbar">
+                <ul class="links">
+                    <li class="link"><i class="fas fa-home"></i><a href="/templates/app/index.html">ƏSAS SƏHİFƏ</a></li>
+                    <li class="link"><i class="fas fa-user"></i><a href="/templates/app/about.html">HAQQIMDA</a></li>
+                    <li class="link"><i class="fas fa-briefcase"></i><a href="/templates/app/works.html">PORTFOLIO</a>
+                    </li>
+                    <li class="link"><i class="fas fa-envelope-open"></i><a href="/templates/app/contact.html">ƏLAQƏ</a>
+                    </li>
+                    <li class="linkdifferent"><i class="fas fa-comments"></i><a href="/templates/app/blog.html">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/app/css/js/threed.js"></script>
+</body>
+
+</html>

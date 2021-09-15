@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Portfolio Panel</a>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/admin">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/aboutboxes">About_Boxes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/works">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/contact">Contact_withme</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/blogs">Blogs</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/admin/aboutboxes" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Görülən işlərin sayı"
+                            name="number_of_works">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="İşin adı" name="works_name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-dark table-striped mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Görülən işlərin sayı</th>
+                            <th scope="col">İşin adı</th>
+                            <th scope="col">Yenilə</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for box in boxes %}
+                        <tr>
+                            <th>{{box.id}}</th>
+                            <td>{{box.number_of_works}}</td>
+                            <td>{{box.works_name}}</td>
+                            <td>
+                                <a href="/update/{{box.id}}"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="/delete/{{box.id}}"><i class="bi bi-trash-fill mx-2"></i></a>
+                            </td>
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

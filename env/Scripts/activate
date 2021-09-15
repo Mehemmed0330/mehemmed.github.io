@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\mehemmed\OneDrive\İş masası\portfolio\env"
+VIRTUAL_ENV="E:\desktop\portfolio\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
